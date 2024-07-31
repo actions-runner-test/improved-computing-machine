@@ -16,7 +16,12 @@ jobs:
     - name: Fix environment
       run: |
         echo "ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true" >> $GITHUB_ENV
-          
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'  # Use a compatible Node.js version
+
     - name: Checkout
       uses: actions/checkout@v4
     
