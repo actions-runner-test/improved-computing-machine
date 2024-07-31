@@ -26,8 +26,8 @@ jobs:
         docker run --rm \
           -v ${{ github.workspace }}:/workspace \
           -w /workspace \
-          beehivelab/tornadovm-nvidia-openjdk:1.0.6 \
-          /bin/bash -c "your-command-here"
+          beehivelab/tornadovm-nvidia-openjdk:1.0.6
+          # /bin/bash -c "your-command-here"
 
     - name: Checkout
       uses: actions/checkout@v4
